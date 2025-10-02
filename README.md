@@ -1,20 +1,63 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 📚 BookShelf
 
-# Run and deploy your AI Studio app
+BookShelf é uma aplicação web para **gerenciamento de biblioteca pessoal**, desenvolvida em **React 19** com **Vite**.  
+Ela permite cadastrar, organizar e acompanhar o progresso de leitura dos seus livros, com interface simples e responsiva.  
 
-This contains everything you need to run your app locally.
+Atualmente, os dados são salvos no **LocalStorage** do navegador, o que garante persistência local sem necessidade de backend.  
 
-View your app in AI Studio: https://ai.studio/apps/temp/2
+---
 
-## Run Locally
+## 🚀 Tecnologias Utilizadas
 
-**Prerequisites:**  Node.js
+- **Vite** (bundler e dev server)  
+- **React 19**  
+- **TypeScript**  
+- **Tailwind CSS (via CDN)**  
+- **LocalStorage** para persistência de dados  
+
+---
+
+## 🛠️ Funcionalidades
+
+### 1. Dashboard Principal
+- Estatísticas da biblioteca:
+  - Total de livros cadastrados  
+  - Livros em leitura  
+  - Livros finalizados  
+  - Total de páginas lidas  
+
+### 2. Biblioteca de Livros
+- Exibição em **cards**  
+- Cada card mostra:
+  - 📖 Capa do livro (com fallback padrão)  
+  - ✍️ Autor  
+  - 📅 Ano de publicação  
+  - ⭐ Avaliação por estrelas (1–5)  
+  - Botões para visualizar, editar e excluir  
+
+### 3. Gerenciamento de Livros
+- **Adicionar novo livro** com formulário validado  
+- **Editar livro** com formulário pré-preenchido  
+- **Excluir livro** com confirmação  
+- **Visualizar detalhes completos**, incluindo sinopse e progresso  
+
+### 4. Autenticação Simples
+- Tela de **login** com persistência via LocalStorage  
+- Áreas restritas (Dashboard e formulários) só acessíveis após login  
+- **Logout** disponível no cabeçalho  
+
+### 5. Dark Mode
+- Suporte a **tema escuro**  
+- Preferência salva em LocalStorage  
+- Detecta automaticamente o tema do sistema operacional  
+
+### 6. Feedback e UX
+- **Toasts** para confirmar ações (sucesso/erro)  
+- Navegação fluida entre telas  
+- Layout responsivo  
+
+---
+
+## 📂 Estrutura do Projeto
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
