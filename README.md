@@ -60,4 +60,52 @@ Atualmente, os dados são salvos no **LocalStorage** do navegador, o que garante
 
 ## 📂 Estrutura do Projeto
 
+src/
+├── App.tsx # Componente principal
+├── index.tsx # Ponto de entrada React
+├── index.html # HTML base (configura dark mode)
+├── components/ # Componentes UI
+├── hooks/ # Hooks customizados (useLocalStorage)
+├── constants/ # Dados iniciais (INITIAL_BOOKS)
+├── types/ # Tipagem TypeScript
 
+
+---
+
+## ⚙️ Como Rodar o Projeto
+
+### Pré-requisitos
+- **Node.js** 18 ou superior  
+- **npm** ou **yarn**
+
+### Passos
+```bash
+# Instalar dependências
+npm install
+
+# Rodar localmente
+npm run dev
+
+# Gerar build de produção
+npm run build
+
+# Pré-visualizar build
+npm run preview
+
+🔮 Próximos Passos (Roadmap)
+
+ Migrar armazenamento de LocalStorage → SQLite com Prisma ORM
+
+ Criar API Routes para manipulação de dados
+
+ Expandir modelo de livros com novos campos (ISBN, notas, progresso)
+
+ Melhorar sistema de autenticação
+
+📸 Preview
+
+(adicione aqui prints da aplicação rodando quando quiser)
+
+📜 Licença
+
+Distribuído sob a licença MIT.
